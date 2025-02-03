@@ -6,6 +6,7 @@
     "npm": ">=9.0.0"
   },
   "private": true,
+  "homepage": "https://bencivenga.github.io/softswiss-test",
   "dependencies": {
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
@@ -13,14 +14,15 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
-    "fibers": "^5.0.3",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-react": "^7.37.4",
-    "prettier": "^3.4.2"
+    "fibers": "^5.0.3",
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.4.2",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +31,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .js,.jsx",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint:fix": "eslint src --ext .js,.jsx --fix"
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
