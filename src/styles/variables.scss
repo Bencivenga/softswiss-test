@@ -1,0 +1,20 @@
+// Colors
+$color-black: #000000;
+$color-white: #ffffff;
+$color-yellow: #ebff00;
+$color-pink: #ff70d9;
+
+// Gradients
+$gradient-primary: linear-gradient(180deg, #0d1e48 0%, #304571 100%);
+$gradient-hover: linear-gradient(90deg, #ebff00 0%, #ff70d9 100%);
+$gradient-icon-hover: linear-gradient(90deg, #ebff00 60%, #ff70d9 60%);
+$gradient-dark: linear-gradient(180deg, #000000 0%, #0f1420 79%);
+
+// Typography
+$font-primary: 'Lato', sans-serif;
+$font-size-base: 14px;
+
+// Breakpoints
+$breakpoint-sm: 360px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1248px;

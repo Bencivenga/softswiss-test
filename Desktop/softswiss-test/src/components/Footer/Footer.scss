@@ -1,0 +1,32 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  min-height: 127px;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 20px 0;
+}
+
+.footer__text {
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 800;
+  color: $color-yellow;
+  padding-top: 80px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../../assets/images/rocket.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+  }
+}

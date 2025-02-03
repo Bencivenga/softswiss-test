@@ -1,0 +1,46 @@
+@use '../../styles/variables' as *;
+
+.button {
+  display: inline-block;
+  width: fit-content;
+  padding: 7px 40px;
+  border: none;
+  border-radius: 30px;
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+
+  // Primary variant (yellow background)
+  &--primary {
+    background-color: $color-yellow;
+    color: $color-black;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // Secondary variant (transparent with border)
+  &--secondary {
+    background-color: transparent;
+    border: 2px solid $color-yellow;
+    color: $color-yellow;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  // Gradient variant
+  &--gradient {
+    background: $gradient-hover;
+    color: $color-black;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

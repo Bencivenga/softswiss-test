@@ -1,0 +1,15 @@
+// Base styles
+@use 'variables' as *;
+@use 'fonts';
+@use 'base';
+@use 'container';
+@use '../components/Header/Header.scss';
+@use '../components/NavMenu/NavMenu.scss';
+@use '../components/Intro/Intro.scss';
+@use '../components/Button/Button.scss';
+@use '../components/Offers/Offers.scss';
+@use '../components/Offer/Offer.scss';
+@use '../components/Summary/Summary.scss';
+@use '../components/Footer/Footer.scss';
+// Third-party
+@import 'normalize.css';

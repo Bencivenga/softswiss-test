@@ -1,0 +1,45 @@
+@use '../../styles/variables' as *;
+
+.offers {
+  margin-bottom: 50px;
+  &__title {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 55px;
+    &__title {
+      font-size: 24px;
+      line-height: 28.8px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: 62px;
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      gap: 40px;
+      .full-width {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}
